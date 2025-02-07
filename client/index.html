@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Database Practice</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='index.css'>
+        <script defer src='index.js'></script>
+    </head>
+    <body class="body">
+        <div class="container">
+            <div>
+                <h1>List of responses</h1>
+                <ol>
+                    <li class="db-response">this is a test response from db</li>
+                </ol>
+            </div>
+            <div>
+                <h1>Add to the database</h1>
+                    <form>
+                    <label for="main-input">What do you want to sent to backend?</label>
+                    <br><br>
+                    <input type="text" id="main-input" name="main-input"/>
+                    <br><br>
+                    <input type="submit" id="submit" onclick="logInput()"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

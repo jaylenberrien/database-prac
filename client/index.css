@@ -1,0 +1,28 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    background-color: gray;
+    color: black;
+    height: 40%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.db-response:hover{
+    
+}
+
+
