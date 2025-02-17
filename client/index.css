@@ -11,18 +11,36 @@ html{
     width: 100%;
 }
 
-.container{
+.page-container{
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: auto; */
+}
+
+.index-container{
     background-color: gray;
     color: black;
     height: 40%;
     width: 60%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     text-align: center;
-    
+    overflow: scroll;    
 }
 
-.db-response:hover{
-    
+.form-container{
+    background-color: gray;
+    color: black;
+    height: 40%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
 }
+
+
 
 

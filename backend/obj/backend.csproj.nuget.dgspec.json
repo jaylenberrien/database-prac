@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Code\\database-prac\\backend\\backend.csproj",
         "projectName": "backend",
         "projectPath": "C:\\Code\\database-prac\\backend\\backend.csproj",
-        "packagesPath": "C:\\Users\\jayle\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Jaylen Berrien\\.nuget\\packages\\",
         "outputPath": "C:\\Code\\database-prac\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jayle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jaylen Berrien\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

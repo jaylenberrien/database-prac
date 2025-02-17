@@ -3,8 +3,18 @@ function logInput(){
     alert(input)
 }
 
-//make a seperate section for the db queries that can be scrolled through
-//giving that its own container, adding some styling
+function edit(){
+    alert("edit")
+}
+
+function deleteEntry(){
+    alert("deleted")
+}
+
+
+
+
+
 
 //work on connecting to db
 //work on downloading and using dapper for db work
