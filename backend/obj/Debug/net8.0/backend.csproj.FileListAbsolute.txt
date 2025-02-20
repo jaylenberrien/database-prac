@@ -1,0 +1,6 @@
+C:\Code\database-prac\backend\obj\Debug\net8.0\backend.csproj.AssemblyReference.cache
+C:\Code\database-prac\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\database-prac\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+C:\Code\database-prac\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+C:\Code\database-prac\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+C:\Code\database-prac\backend\obj\Debug\net8.0\backend.sourcelink.json
