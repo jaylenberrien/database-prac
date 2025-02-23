@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 function edit(){
 
     alert("edit")
@@ -12,20 +10,43 @@ function deleteEntry(){
 
 }
 
-async function postEntry(){
+async function postEntry(){ 
 
     const input = document.getElementById("main-input").value
 
-    try {
+    try{
+        const response = await fetch("http://localhost:3000/post", {
+            method: "POST",
+            body: JSON.stringify({message: input})
+        })
 
-        axios.post("localhost:3000/post", data={message: input})
-        
-    } catch (error) {    
+        if (!response.ok){
+            throw new Error(`Reponse status ${response.status}`)
+        }
 
-        alert("there was an error, check console")
-        console.log(response.data)
+        const json = await response.json()
+        console.log(json)
+
+    } catch (error) {
+        console.error(error.message);
 
     }
+
+
+
+
+ 
+
+
+    // try {
+    //     response = await axios.post("http://localhost:3000/post", data={message: input})
+    //     console.log(response.data)
+        
+    // } catch (error) {    
+    //     alert("there was an error, check console")
+    //     console.log(response.data)
+
+    // }
     
 }
  
