@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Code\\database-prac\\client\\client.csproj": {}
+    "C:\\Code\\database-prac\\client\\client.csproj": {}
   },
   "projects": {
-    "c:\\Code\\database-prac\\client\\client.csproj": {
+    "C:\\Code\\database-prac\\client\\client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Code\\database-prac\\client\\client.csproj",
+        "projectUniqueName": "C:\\Code\\database-prac\\client\\client.csproj",
         "projectName": "client",
-        "projectPath": "c:\\Code\\database-prac\\client\\client.csproj",
+        "projectPath": "C:\\Code\\database-prac\\client\\client.csproj",
         "packagesPath": "C:\\Users\\Jaylen Berrien\\.nuget\\packages\\",
-        "outputPath": "c:\\Code\\database-prac\\client\\obj\\",
+        "outputPath": "C:\\Code\\database-prac\\client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jaylen Berrien\\AppData\\Roaming\\NuGet\\NuGet.Config"

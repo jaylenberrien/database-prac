@@ -1,0 +1,15 @@
+C:\Code\database-prac\client\obj\Debug\net8.0\client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\database-prac\client\obj\Debug\net8.0\client.AssemblyInfoInputs.cache
+C:\Code\database-prac\client\obj\Debug\net8.0\client.AssemblyInfo.cs
+C:\Code\database-prac\client\obj\Debug\net8.0\client.csproj.CoreCompileInputs.cache
+C:\Code\database-prac\client\obj\Debug\net8.0\client.sourcelink.json
+C:\Code\database-prac\client\bin\Debug\net8.0\client.exe
+C:\Code\database-prac\client\bin\Debug\net8.0\client.deps.json
+C:\Code\database-prac\client\bin\Debug\net8.0\client.runtimeconfig.json
+C:\Code\database-prac\client\bin\Debug\net8.0\client.dll
+C:\Code\database-prac\client\bin\Debug\net8.0\client.pdb
+C:\Code\database-prac\client\obj\Debug\net8.0\client.dll
+C:\Code\database-prac\client\obj\Debug\net8.0\refint\client.dll
+C:\Code\database-prac\client\obj\Debug\net8.0\client.pdb
+C:\Code\database-prac\client\obj\Debug\net8.0\client.genruntimeconfig.cache
+C:\Code\database-prac\client\obj\Debug\net8.0\ref\client.dll

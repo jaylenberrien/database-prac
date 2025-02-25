@@ -15,7 +15,7 @@ async function postEntry(){
     const input = document.getElementById("main-input").value
 
     try{
-        const response = await fetch("http://localhost:3000/post", {
+        const response = await fetch("http://localhost:3000/api/post", {
             method: "POST",
             body: JSON.stringify({message: input})
         })

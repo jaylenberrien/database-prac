@@ -12,16 +12,19 @@ using NuGet.Protocol.Plugins;
 using Microsoft.EntityFrameworkCore;
 
 
-
-new EnvLoader().AddEnvFile(".env").Load();
-var reader = new EnvReader();
-
     
 public class MessageController : ControllerBase
 {
     
+    public MessageController()
+    {
+        var _ = typeof(EnvConfig);
+    }
+
+
+
     [HttpPost]
-    [Route("api/[post]")]
+    [Route("api/post")]
      public async Task<ActionResult> CreateMessage(string message)
     {
         Console.WriteLine(message);
@@ -31,11 +34,9 @@ public class MessageController : ControllerBase
         try
         {
             await using var connection = new SqlConnection(dbConnection);
-            var sql = $@"
-            insert into dbo.Messages(Message)
-            values(${message})
-            ";
-            var results = await connection.QueryAsync<Message>(sql);
+            var sql = "INSERT INTO dbo.Messages(Message) VALUES(@Message)";
+            // var results = await connection.QueryAsync<Message>(sql);
+            await connection.ExecuteAsync(sql, new {Message = message});
 
             return Accepted();
         }
@@ -44,8 +45,6 @@ public class MessageController : ControllerBase
             Console.WriteLine(e);
             return BadRequest();
         }
-
-
         
     }
 
