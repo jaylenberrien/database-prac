@@ -12,16 +12,18 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://127.0.0.1:5500")
             .AllowAnyMethod()
-            .AllowAnyHeader();
+            .AllowAnyHeader()
+            .AllowCredentials();
     })
 );
 
 builder.Services.AddControllers();
 
 var app = builder.Build();
-app.MapGet("/", () => "Hello World!");
 
 app.UseCors(MyAllowSpecificOrigins);
+
+app.MapGet("/", () => "Hello World!");
 app.MapControllers();
 
 

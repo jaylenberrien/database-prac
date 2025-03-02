@@ -11,13 +11,21 @@ function deleteEntry(){
 }
 
 async function postEntry(){ 
+    
+    const form = document.getElementById("main-form")
+    form.addEventListener("submit", function(evt){
+        evt.preventDefault()
+    });
 
     const input = document.getElementById("main-input").value
-
+    
     try{
         const response = await fetch("http://localhost:3000/api/post", {
             method: "POST",
-            body: JSON.stringify({message: input})
+            body: JSON.stringify({message: input}),
+            // headers: {
+            //     " "
+            // }
         })
 
         if (!response.ok){

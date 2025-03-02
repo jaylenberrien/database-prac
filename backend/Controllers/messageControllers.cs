@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 using System.Runtime.ExceptionServices;
 using Dapper;
@@ -6,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Microsoft.Data.SqlClient;
 using Microsoft.Identity.Client;
-using DotEnv.Core;
+// using DotEnv.Core;
 using System.Data.Common;
 using NuGet.Protocol.Plugins;
 using Microsoft.EntityFrameworkCore;
@@ -16,10 +17,10 @@ using Microsoft.EntityFrameworkCore;
 public class MessageController : ControllerBase
 {
     
-    public MessageController()
-    {
-        var _ = typeof(EnvConfig);
-    }
+    // public MessageController()
+    // {
+    //     var _ = typeof(EnvConfig);
+    // }
 
 
 
@@ -29,7 +30,11 @@ public class MessageController : ControllerBase
     {
         Console.WriteLine(message);
 
-        string dbConnection = "CONNECTION".GetEnv();
+        // string dbConnection = "CONNECTION".GetEnv();
+        
+
+        string dbConnection = Environment.GetEnvironmentVariable("EnvVar");
+        Console.WriteLine($"Connection String: {dbConnection}");
 
         try
         {
